@@ -1,0 +1,41 @@
+
+INT  IDENTIFIER '(' ')'  '{' 
+    // main function
+    CHAR  IDENTIFIER  '='  CONSTANT ';' 
+    SIGNED  SHORT  INT  IDENTIFIER  '='  CONSTANT ';' 
+    IDENTIFIER  LONG  DOUBLE  IDENTIFIER  '='  CONSTANT ';' 
+
+    INT  IDENTIFIER  '='  CONSTANT ';' 
+
+    FOR '(' INT  IDENTIFIER  '='  CONSTANT  ';'  IDENTIFIER  LE_OP  CONSTANT  ';'  IDENTIFIER INC_OP ')' '{' 
+        IF '(' '(' IDENTIFIER  '+'  IDENTIFIER ')'  '%'  CONSTANT  EQ_OP  CONSTANT ')' '{' 
+            IF '(' IDENTIFIER  '&'  CONSTANT ')' 
+                IDENTIFIER  ADD_ASSIGN  IDENTIFIER ';' 
+            ELSE 
+                IDENTIFIER  SUB_ASSIGN  IDENTIFIER ';' 
+        '}' 
+        ELSE '{' 
+            IF '(' IDENTIFIER  '|'  CONSTANT ')' 
+                IDENTIFIER  MUL_ASSIGN  IDENTIFIER ';' 
+            ELSE 
+                IDENTIFIER  DIV_ASSIGN  IDENTIFIER ';' 
+        '}' 
+    '}' 
+
+    INT  IDENTIFIER  '='  CONSTANT ';' 
+
+    /*
+        If sum is between [10, 100)
+        increase count.
+    */
+    
+    IF '(' IDENTIFIER  GE_OP  CONSTANT  AND_OP  IDENTIFIER  '<'  CONSTANT ')' '{' 
+        IDENTIFIER INC_OP ';' 
+    '}' 
+
+    IF '(' IDENTIFIER  NE_OP  CONSTANT ')' '{' 
+        IDENTIFIER DEC_OP ';' 
+    '}' 
+
+    RETURN  CONSTANT ';' 
+'}' 
