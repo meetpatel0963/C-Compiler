@@ -1,8 +1,13 @@
 %{
 #include <stdio.h>
-int lineNumber=1;
-int nestedCommentCount=0;
-int commentFlag=0;
+#include <stdlib.h>
+#include <malloc.h>
+#include <string.h>
+
+int tokenNumber = 0, lineNumber = 1;
+int nestedCommentCount = 0, numberOfCommentLines = 0;
+bool nestedMultilineComment = 0;
+int commentFlag = 0;
 FILE *fq;
 %}
 
@@ -45,8 +50,6 @@ multilineCommentEnd     (\*\/)
 <DETECT_COMMENT>\n 		{ lineNumber++; fprintf(fq, "\n"); }
 
 <DETECT_COMMENT>. 		{ fprintf(fq, "%s", yytext); }
-
-
 
 
 "auto"			{  fprintf(fq, "AUTO "); }

@@ -1,0 +1,13 @@
+
+	SymbolTable
+
+		Token					Type					Line Number
+
+                main                                     INT                                       3
+                   c                                    CHAR                                       6
+                   i                                     INT                        7 13 15 17 21 23
+                   j                                     INT                     7 12 12 12 13 14 20
+                   d                                   FLOAT                                       8
+                 sum                                     INT                    10 15 17 21 23 35 35
+               count                                     INT                             27 36 39 40
+                  cc                                     INT                                      43
