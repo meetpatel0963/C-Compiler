@@ -1,0 +1,30 @@
+
+	SymbolTable
+
+				Token									Type								Line Number
+
+                 add                                     INT                                     3 3
+                   a                                     INT                                     3 3
+                   b                                     INT                                     3 3
+                   a                                     INT                                       4
+                   b                                     INT                                       4
+                main                                     INT                                     7 7
+                   c                                    CHAR                                     9 9
+                   i                                     INT                                   10 10
+                   j                                     INT                          10 10 16 16 16
+                   k                                     INT                                   11 11
+                   l                                     INT                                   11 11
+                   d                                   FLOAT                                   12 12
+                 sum                                     INT                             14 14 40 40
+                 tot                                     INT                                   14 14
+                   i                                                                              17
+                   j                                                                              17
+                   j                                                                           18 24
+                 sum                                                                     19 21 25 27
+                   i                                                                     19 21 25 27
+                 tot                                                                           29 29
+                 add                                                                              29
+                 sum                                                                              29
+               count                                     INT                                32 32 44
+               count                                                                           41 45
+                  cc                                     INT                                   48 48
