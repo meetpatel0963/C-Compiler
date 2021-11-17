@@ -12,7 +12,6 @@ typedef struct tokenNode tokenNode;
 tokenNode *symbolPtr = NULL;
 tokenNode *constantPtr = NULL;
 tokenNode *parsedPtr = NULL;
-extern int functionCount;
 extern int scopeCount;
 char typeBuffer = ' ';
 char *sourceCode;

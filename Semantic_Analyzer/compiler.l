@@ -7,7 +7,6 @@ int lineCount=1;
 int nestedCommentCount=0;
 int commentFlag=0;
 int scopeCount=0;
-int functionCount;
 char *tokenTablePtr;
 
 void addToken(char*);
@@ -101,7 +100,7 @@ multilineCommentEnd     (\*\/)
 "!="			{  return(NE_OP); }
 ";"			    {  return(';'); }
 "{"		        {  scopeCount++; makeList("{",'p',lineCount); return('{'); }
-"}"		        {  scopeCount--; functionCount++; makeList("}",'p',lineCount); return('}'); }
+"}"		        {  scopeCount--; makeList("}",'p',lineCount); return('}'); }
 ","			    {  return(','); }
 ":"			    {  return(':'); }
 "="			    {  return('='); }
