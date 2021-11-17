@@ -3,18 +3,10 @@ struct tokenNode
 	char *token, type[20], line[100];
 	char *scope[20];
 	int scopeValue;
-	int funcCount;
 	struct tokenNode *next;
 };
 typedef struct tokenNode tokenNode;
 
-struct funcNode {
-	char funcName[30];
-	int line;
-	char funcReturn[20];
-	struct  funcNode *next;
-};
-typedef struct funcNode funcNode;
 
 
 tokenNode *symbolPtr = NULL;
@@ -117,7 +109,6 @@ void addSymbol(char *tokenName, int tokenLine, int scopeVal) {
 
 	char type[20];
 	for (tokenNode *p = symbolPtr ; p != NULL ; p = p->next) {
-		// printf("\n%s %s %d %d %d %d", tokenName, p->token, scopeCount, p->scopeValue, functionCount, p->funcCount);
 		if (strcmp(p->token, tokenName) == 0 && p->scopeValue == scopeCount) {
 			strcat(p->line, line);
 			return;
@@ -135,8 +126,7 @@ void addSymbol(char *tokenName, int tokenLine, int scopeVal) {
 	case 'c': strcpy(temp->type, "CHAR"); break;
 	}
 
-	temp->funcCount = functionCount;
-
+	
 	if (scopeCount == 0) {
 		strcpy(temp->scope, "GLOBAL");
 		temp->scopeValue = scopeCount;
