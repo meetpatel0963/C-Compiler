@@ -3,11 +3,10 @@
 #include <string.h>
 #include "compiler.tab.h"
 
-int lineNumber=1;
+int lineCount=1;
 int nestedCommentCount=0;
 int commentFlag=0;
 int scopeCount=0;
-int functionCount;
 char *tokenTablePtr;
 
 void addToken(char*);
@@ -40,14 +39,14 @@ multilineCommentEnd     (\*\/)
 					
 <DETECT_COMMENT>{multilineCommentEnd} 	{   
                                             BEGIN(INITIAL); 
-                                            lineNumber++;
+                                            lineCount++;
                                             if(nestedCommentCount>0)
                                                 nestedCommentCount--;
                                             if(nestedCommentCount==0)
                                                 BEGIN(INITIAL);
                                         }
                     			
-<DETECT_COMMENT>\n 		{lineNumber++;}
+<DETECT_COMMENT>\n 		{lineCount++;}
 
 <DETECT_COMMENT>. 		{}
 
@@ -100,8 +99,8 @@ multilineCommentEnd     (\*\/)
 "=="			{  return(EQ_OP); }
 "!="			{  return(NE_OP); }
 ";"			    {  return(';'); }
-"{"		        {  scopeCount++; makeList("{",'p',lineNumber); return('{'); }
-"}"		        {  scopeCount--; functionCount++; makeList("}",'p',lineNumber); return('}'); }
+"{"		        {  scopeCount++; makeList("{",'p',lineCount); return('{'); }
+"}"		        {  scopeCount--; makeList("}",'p',lineCount); return('}'); }
 ","			    {  return(','); }
 ":"			    {  return(':'); }
 "="			    {  return('='); }
@@ -122,12 +121,12 @@ multilineCommentEnd     (\*\/)
 "|"			    {  return('|'); }
 
 
-"#include"(.)*"\n"	{ lineNumber++; }
-"#define"(.)*"\n"	{ lineNumber++; }
+"#include"(.)*"\n"	{ lineCount++; }
+"#define"(.)*"\n"	{ lineCount++; }
 
 [ ]			    {}
 [\t\v\f]		{}
-[\n]			{lineNumber++;}
+[\n]			{lineCount++;}
 .			    {}
 
 %%
