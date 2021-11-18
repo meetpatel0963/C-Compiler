@@ -3,17 +3,17 @@
 
 					Token									Type																			LineNumber
 
-                 int                       Keyword                                                3 3 3 7 10 11 14 32 48
+                 int                       Keyword                                                   3 3 3 7 10 11 14 32
                    ,                    Punctuator                                                         3 10 11 14 29
                    (                    Punctuator                                           3 7 17 21 27 28 29 30 44 48
                    )                    Punctuator                                           3 7 17 21 27 28 29 30 44 48
                    {                    Punctuator                                                    3 7 16 17 23 40 44
                    +                      Operator                                                                  4 17
-              return                       Keyword                                                                  4 50
-                   ;                    Punctuator                   4 9 10 11 12 14 16 16 19 21 25 27 29 32 41 45 48 50
-                   }                    Punctuator                                                   5 22 28 30 42 46 51
+              return                       Keyword                                                                  4 48
+                   ;                    Punctuator                      4 9 10 11 12 14 16 16 19 21 25 27 29 32 41 45 48
+                   }                    Punctuator                                                   5 22 28 30 42 46 49
                 char                       Keyword                                                                     9
-                   =                      Operator                                          9 10 11 12 14 14 16 29 32 48
+                   =                      Operator                                             9 10 11 12 14 14 16 29 32
               signed                       Keyword                                                                    10
                short                       Keyword                                                                    10
             unsigned                       Keyword                                                                    11

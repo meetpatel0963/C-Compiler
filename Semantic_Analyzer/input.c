@@ -11,7 +11,7 @@ int main() {
     unsigned long int k = 2, l;
     float d = 4.5E+6;
 
-	int sum = 0, tot = 0;
+    int sum = 0, tot = 0;
     
     for(j = 1 ; j <= 10 ; j++){
         if((i + j) % 2 == 0){
@@ -43,8 +43,6 @@ int main() {
     if(count != 0){
         count--;
     }
-
-	int cc = 0;
 
     return 0;
 }

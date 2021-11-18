@@ -138,7 +138,7 @@ assignment_expression
 	;
 
 assignment_operator
-    :   '=' 		        { makeList("=",'o', lineNumber); }
+    :   '=' 		    { makeList("=",'o', lineNumber); }
 	|   MUL_ASSIGN 	    { makeList("*=",'o', lineNumber); }
 	|   DIV_ASSIGN 	    { makeList("/=",'o', lineNumber); }
 	|   MOD_ASSIGN 	    { makeList("%=",'o', lineNumber); }
@@ -230,7 +230,7 @@ declaration_list
     ; 
 
 declaration
-	:   declaration_specifiers ';' 			            { makeList(";", 'p', lineNumber);typeBuffer=' '; }
+	:   declaration_specifiers ';' 			              { makeList(";", 'p', lineNumber);typeBuffer=' '; }
 	|   declaration_specifiers init_declarator_list ';'   { makeList(";", 'p', lineNumber); typeBuffer=' ';}
 	;
 
@@ -262,11 +262,11 @@ statement_list
     ;
 
 statement   
-    :   compound_statement
-    |   expression_statement
-    |   selection_statement
-    |   iteration_statement
-    |   jump_statement
+    :   compound_statement    
+    |   expression_statement  
+    |   selection_statement   
+    |   iteration_statement   
+    |   jump_statement        
     ;
 
 expression_statement    

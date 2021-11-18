@@ -3,11 +3,15 @@
 
 		Token					Type					Line Number
 
-                main                                     INT                                       3
-                   c                                    CHAR                                       6
-                   i                                     INT                        7 13 15 17 21 23
-                   j                                     INT                     7 12 12 12 13 14 20
-                   d                                   FLOAT                                       8
-                 sum                                     INT                    10 15 17 21 23 35 35
-               count                                     INT                             27 36 39 40
-                  cc                                     INT                                      43
+                 add                                     INT                                    3 29
+                   a                                     INT                                     3 4
+                   b                                     INT                                     3 4
+                main                                     INT                                       7
+                   c                                    CHAR                                      10
+                   i                                     INT                       11 17 19 21 25 27
+                   j                                     INT                    11 16 16 16 17 18 24
+                   d                                   FLOAT                                      12
+                 sum                                     INT                 14 19 21 25 27 29 40 40
+                 tot                                     INT                                14 29 29
+               count                                     INT                             32 41 44 45
+                  cc                                     INT                                      48

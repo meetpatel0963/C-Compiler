@@ -27,4 +27,3 @@
                  sum                                                                              29
                count                                     INT                                32 32 44
                count                                                                           41 45
-                  cc                                     INT                                   48 48

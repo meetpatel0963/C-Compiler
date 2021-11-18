@@ -36,7 +36,7 @@ int checkScope(char *tempToken, int lineCount) {
     for(tokenList *p = symbolPtr ; p != NULL ; p = p->next) {
 		if(strcmp(tempToken, "printf") == 0 || strcmp(tempToken, "scanf") == 0){
 		 	tempFlag = 1;		
-		 }
+		}
 		else{		
 			if(strcmp(tempToken, p->token) == 0){
 				strcpy(type, p->type);
@@ -103,8 +103,8 @@ void checkDeclaration(char *tokenName, int tokenLine, int scopeVal){
 				return;			
 			}				
 		}	
-	}
-
+	}   
+    
 	addSymbol(tokenName, tokenLine, scopeCount);
 }
 

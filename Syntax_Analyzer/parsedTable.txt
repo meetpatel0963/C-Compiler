@@ -3,49 +3,53 @@
 
 								Token												Type																					LineNumber
 
-                 int                       Keyword                                      3 7 10 27 43
-                main                    Identifier                                                 3
-                   (                    Punctuator                            3 13 17 23 24 25 39 43
-                   )                    Punctuator                            3 13 17 23 24 25 39 43
-                   {                    Punctuator                                  3 12 13 19 35 39
-                char                       Keyword                                                 6
-                   c                    Identifier                                                 6
-                 'a'                      Constant                                                 6
-                   =                      Operator                                 6 7 8 10 12 27 43
-                   ;                    Punctuator         6 7 8 10 12 12 15 17 21 23 27 36 40 43 45
-              signed                       Keyword                                                 7
-               short                       Keyword                                                 7
-                   i                    Identifier                                  7 13 15 17 21 23
-                   1                      Constant                                        7 12 14 20
-                   j                    Identifier                            7 12 12 12 12 13 14 20
-                   ,                    Punctuator                                                 7
-            unsigned                       Keyword                                                 8
-                long                       Keyword                                                 8
-               float                       Keyword                                                 8
-                   d                    Identifier                                                 8
-              4.5E+6                      Constant                                                 8
-                 sum                    Identifier                              10 15 17 21 23 35 35
-                   0                      Constant                                 10 13 27 39 43 45
-                  10                      Constant                                             12 35
-                  <=                      Operator                                                12
-                   +                      Operator                                                13
-                   2                      Constant                                                13
-                   %                      Operator                                                13
-                  ==                      Operator                                                13
-                   &                      Operator                                                14
-                  +=                      Operator                                                15
-                  -=                      Operator                                                17
-                  if                       Keyword                                    17 23 24 39 43
-                else                       Keyword                                          17 23 24
-                   }                    Punctuator                                 18 24 25 37 41 46
-                   |                      Operator                                                20
-                  *=                      Operator                                                21
-                  /=                      Operator                                                23
-                 for                       Keyword                                                25
-               count                    Identifier                                 27 36 36 39 40 40
-                  >=                      Operator                                                35
-                 100                      Constant                                                35
-                  &&                      Operator                                                35
-                  !=                      Operator                                                39
-                  cc                    Identifier                                                43
-              return                       Keyword                                                45
+                 int                       Keyword                               3 3 3 7 11 14 32 48
+                 add                    Identifier                                              3 29
+                   a                    Identifier                                               3 4
+                   b                    Identifier                                               3 4
+                   ,                    Punctuator                                        3 11 14 29
+                   (                    Punctuator                       3 7 17 21 27 28 29 30 44 48
+                   )                    Punctuator                       3 7 17 21 27 28 29 30 44 48
+                   {                    Punctuator                                3 7 16 17 23 40 44
+                   +                      Operator                                              4 17
+              return                       Keyword                                              4 50
+                   ;                    Punctuator 4 10 11 12 14 16 16 19 21 25 27 29 32 41 45 48 50
+                   }                    Punctuator                               5 22 28 30 42 46 51
+                main                    Identifier                                                 7
+                char                       Keyword                                                10
+                   c                    Identifier                                                10
+                 'a'                      Constant                                                10
+                   =                      Operator                        10 11 12 14 14 16 29 32 48
+              signed                       Keyword                                                11
+               short                       Keyword                                                11
+                   i                    Identifier                                 11 17 19 21 25 27
+                   1                      Constant                                       11 16 18 24
+                   j                    Identifier                           11 16 16 16 16 17 18 24
+            unsigned                       Keyword                                                12
+                long                       Keyword                                                12
+               float                       Keyword                                                12
+                   d                    Identifier                                                12
+              4.5E+6                      Constant                                                12
+                 sum                    Identifier                           14 19 21 25 27 29 40 40
+                   0                      Constant                              14 14 17 32 44 48 50
+                 tot                    Identifier                                          14 29 29
+                  10                      Constant                                             16 40
+                  <=                      Operator                                                16
+                   2                      Constant                                                17
+                   %                      Operator                                                17
+                  ==                      Operator                                                17
+                   &                      Operator                                                18
+                  +=                      Operator                                                19
+                  -=                      Operator                                                21
+                  if                       Keyword                                    21 27 28 44 48
+                else                       Keyword                                          21 27 28
+                   |                      Operator                                                24
+                  *=                      Operator                                                25
+                  /=                      Operator                                                27
+                 for                       Keyword                                                30
+               count                    Identifier                                 32 41 41 44 45 45
+                  >=                      Operator                                                40
+                 100                      Constant                                                40
+                  &&                      Operator                                                40
+                  !=                      Operator                                                44
+                  cc                    Identifier                                                48

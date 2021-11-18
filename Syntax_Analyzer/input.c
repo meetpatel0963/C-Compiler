@@ -1,12 +1,16 @@
 #include<stdio.h>
 
+int add(int a, int b){
+    return a + b;
+}
+
 int main() {
     // main function
     char c = 'a';
     signed short int i = 1, j;
     unsigned long float d = 4.5E+6;
     
-	int sum = 0;
+	int sum = 0, tot = 0;
 
     for(j = 1 ; j <= 10 ; j++){
         if((i + j) % 2 == 0){
@@ -21,10 +25,11 @@ int main() {
             else
                 sum /= i;
         }
+        tot = add(tot, sum);
     }
 
     int count = 0;
-	
+
     /*
         If sum is between [10, 100)
         increase count.
